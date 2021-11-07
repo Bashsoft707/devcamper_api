@@ -1,0 +1,24 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "create a todo list app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bashsoft707/Todo-List.git"
+  },
+  "keywords": [
+    "todo",
+    "next",
+    "typescript"
+  ],
+  "author": "Bashsofts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bashsoft707/Todo-List/issues"
+  },
+  "homepage": "https://github.com/Bashsoft707/Todo-List#readme"
+}
