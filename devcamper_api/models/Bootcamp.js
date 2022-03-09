@@ -102,6 +102,7 @@ const BootcampSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
+    averageCost: Number,
   },
   {
     toJSON: { virtuals: true },

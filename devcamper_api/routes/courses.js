@@ -11,8 +11,24 @@ const {
   deleteCourse,
 } = require("../controllers/courses");
 
-router.route("/").get(getCourses).post(addCourse);
+const Courses = require("../models/Course");
+const advancedResult = require("../middleware/advancedResult");
 
-router.route("/:id").get(getSingleCourse).put(updateCourse).delete(deleteCourse);
+router
+  .route("/")
+  .get(
+    advancedResult(Courses, {
+      path: "bootcamp",
+      select: "name description",
+    }),
+    getCourses
+  )
+  .post(addCourse);
+
+router
+  .route("/:id")
+  .get(getSingleCourse)
+  .put(updateCourse)
+  .delete(deleteCourse);
 
 module.exports = router;
